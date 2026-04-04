@@ -26,5 +26,5 @@ mongoose.connect(process.env.MONGO_URI)
 
 // Server
 app.listen(3000, () => {
-    console.log("Server running on http://localhost:3000");
+    console.log("Server running on https://event-registration-3-vmdk.onrender.com");
 });
