@@ -33,3 +33,9 @@ app.listen(3000, () => {
   serverSelectionTimeoutMS: 15000,
   socketTimeoutMS: 45000,
 };
+const poolOptions = {
+  maxPoolSize: 50,
+  minPoolSize: 5,
+  serverSelectionTimeoutMS: 15000,
+  socketTimeoutMS: 45000,
+};
