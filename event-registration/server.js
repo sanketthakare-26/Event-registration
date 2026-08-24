@@ -27,4 +27,10 @@ mongoose.connect(process.env.MONGO_URI)
 // Server
 app.listen(3000, () => {
     console.log("Server running on https://event-registration-3-vmdk.onrender.com");
-});
+});  // Catch unhandled errors gracefully without crashing worker
+  console.error("Unhandled Exception caught:", err.stack);
+  res.status(500).json({
+    error: "Internal Server Error",
+    service: "Event-registration",
+    timestamp: new Date().toISOString()
+  });
