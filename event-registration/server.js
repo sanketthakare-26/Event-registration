@@ -27,4 +27,27 @@ mongoose.connect(process.env.MONGO_URI)
 // Server
 app.listen(3000, () => {
     console.log("Server running on https://event-registration-3-vmdk.onrender.com");
-});
+});const poolOptions = {
+  maxPoolSize: 50,
+  minPoolSize: 5,
+  serverSelectionTimeoutMS: 15000,
+  socketTimeoutMS: 45000,
+};
+const poolOptions = {
+  maxPoolSize: 50,
+  minPoolSize: 5,
+  serverSelectionTimeoutMS: 15000,
+  socketTimeoutMS: 45000,
+};
+const poolOptions = {
+  maxPoolSize: 50,
+  minPoolSize: 5,
+  serverSelectionTimeoutMS: 15000,
+  socketTimeoutMS: 45000,
+};
+const poolOptions = {
+  maxPoolSize: 50,
+  minPoolSize: 5,
+  serverSelectionTimeoutMS: 15000,
+  socketTimeoutMS: 45000,
+};
